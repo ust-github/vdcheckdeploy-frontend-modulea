@@ -1,0 +1,14 @@
+image:
+  repository: artifactory.dagility.com/docker/vdcheckdeploy-frontend-modulea
+  tag: latest
+  pullPolicy: Always
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx-internal
+  hosts:
+  - host: vdcheckdeploy-frontend-modulea-habitat-testttttttttttttttttttttttttttttttttttttttttttttttttttt.dagility.com
+    paths:
+    - /
+serviceAccount:
+  create: false
